@@ -19,7 +19,7 @@ let quote = []
           $('#here').empty()
         $.ajax({
             type: 'GET',
-            url: 'http://ron-swanson-quotes.herokuapp.com/v2/quotes'
+            url: 'https://ron-swanson-quotes.herokuapp.com/v2/quotes'
         }).done((ron) => {
             console.log(ron);
                 let wisdom = $(`<h2>${ron}</h2>`)
